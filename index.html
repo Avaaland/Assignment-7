@@ -9,35 +9,91 @@
     <link rel="stylesheet" href ="./css/style.css">
 </head>
 <body>
-    <h1 class="text-center mt-4">YOUR QUIZ TITLE HERE</h1>
+    <h1 class="text-center mt-4">What Music Genre Are You?</h1>
     
-    <!-- Start quiz element -->
+    <!-- Q1 -->
     <div class="container d-flex justify-content-center" id="question-1">
       <div class="card my-4 p-4 question-block" style="width: 75%;">
-        <h4 class="mb-3">YOUR QUIZ QUESTION HERE</h4>
+        <h4 class="mb-3">What's your ideal Friday night?</h4>
         <div class="row g-2">
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">ANSWER CHOICE A</button>
+          <div class="col-6 col-md-3">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-question="q1" data-category="rock" data-answer="loud-show">Loud live show</button>
+          </div>
+          <div class="col-6 col-md-3">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-question="q1" data-category="pop" data-answer="friends-party">Party with friends</button>
+          </div>
+          <div class="col-6 col-md-3">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-question="q1" data-category="hiphop" data-answer="studio-vibes">Studio vibes</button>
           </div>
           <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">ANSWER CHOICE B</button>
-          </div>
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">ANSWER CHOICE C</button>
-          </div>
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">ANSWER CHOICE D</button>
+            <button class="btn btn-outline-primary w-100 answer-btn" data-question="q1" data-category="classical" data-answer="quiet-night">Quiet night and a book</button>
           </div>
         </div>
       </div>
     </div>
 
-    
-    
-    <!-- End quiz element -->
+    <!-- Q2 -->
+     <div class="container d-flex justify-content-center" id="question-2">
+      <div class="card my-4 p-4 question-block" style="width: 75%;">
+        <h4 class="mb-3">Pick a travel vibe:</h4>
+        <div class="row g-2">
+          <div class="col-6 col-md-3">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-question="q2" data-category="rock" data-answer="road-trip">Road trip and diners</button>
+          </div>
+          <div class="col-6 col-md-3">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-question="q2" data-category="pop" data-answer="city-glam">Big city glam</button>
+          </div>
+          <div class="col-6 col-md-3">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-question="q2" data-category="hiphop" data-answer="street-culture">Street culture and food</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-question="q2" data-category="classical" data-answer="museums-parks">Museums and parks</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <!-- Add more quiz elements here -->
+    <!-- Q3 -->
+     <div class="container d-flex justify-content-center" id="question-1">
+      <div class="card my-4 p-4 question-block" style="width: 75%;">
+        <h4 class="mb-3">Your go-to focus style is...</h4>
+        <div class="row g-2">
+          <div class="col-6 col-md-3">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-question="q3" data-category="rock" data-answer="high-energy">High energy</button>
+          </div>
+          <div class="col-6 col-md-3">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-question="q3" data-category="pop" data-answer="collab">Collaborative and social</button>
+          </div>
+          <div class="col-6 col-md-3">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-question="q3" data-category="hiphop" data-answer="flow-state">Flow state, no rules</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-question="q3" data-category="classical" data-answer="structured">Structured and calm</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Q4 -->
+     <div class="container d-flex justify-content-center" id="question-1">
+      <div class="card my-4 p-4 question-block" style="width: 75%;">
+        <h4 class="mb-3">Pick a color palette:</h4>
+        <div class="row g-2">
+          <div class="col-6 col-md-3">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-question="q4" data-category="rock" data-answer="black-red">Black and red</button>
+          </div>
+          <div class="col-6 col-md-3">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-question="q4" data-category="pop" data-answer="neon">Neon and pastels</button>
+          </div>
+          <div class="col-6 col-md-3">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-question="q4" data-category="hiphop" data-answer="gold">Gold and earth tones</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-question="q4" data-category="classical" data-answer="navy">Navy and cream</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <div class="container d-flex justify-content-center">
@@ -45,9 +101,9 @@
     </div>    
     <!-- Output the result here -->
     <div class="container d-flex justify-content-center">
-      <div id="result-container" class="card p-4 mb-4" style="width: 75%; display: none;">
+      <div id="result-container" class="card p-4 mb-4" style="width: 75%; display: none;" aria-live="polite">
         <h3>Your Result:</h3>
-        <p id="result-text"></p>
+        <p id="result-text" class="mb-0"></p>
       </div>
     </div>
     
